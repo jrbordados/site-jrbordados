@@ -3,6 +3,7 @@ import React from "react";
 import { clsx } from "clsx";
 import { Montserrat } from "next/font/google";
 
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
@@ -16,7 +17,8 @@ export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className={className}>
       <Header />
-      {children}
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };
