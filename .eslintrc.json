@@ -1,24 +1,9 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:import/errors",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "plugins": [
-    "@typescript-eslint/eslint-plugin",
-    "prettier",
-    "react-hooks",
-    "jsx-a11y",
-    "import-helpers",
-    "perfectionist"
-  ],
+  "extends": ["next/core-web-vitals", "next/typescript", "plugin:import/errors", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier", "react-hooks", "jsx-a11y", "import-helpers", "perfectionist"],
   "rules": {
-    "prettier/prettier": "error",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
-    ],
+    "prettier/prettier": "warn",
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-empty-object-type": "warn",
     "@typescript-eslint/consistent-type-imports": [
@@ -29,10 +14,7 @@
         "fixStyle": "inline-type-imports"
       }
     ],
-    "react/jsx-filename-extension": [
-      "error",
-      { "extensions": [".js", ".jsx", ".tsx"] }
-    ],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".tsx"] }],
     "import/no-unresolved": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -43,14 +25,7 @@
       {
         "newlinesBetween": "always",
         "alphabetize": { "order": "asc", "ignoreCase": true },
-        "groups": [
-          "/^react/",
-          "module",
-          "/^~/",
-          "/^@mui/",
-          ["/^@layouts/", "/^@services/", "/^@components/"],
-          ["parent", "sibling", "index"]
-        ]
+        "groups": ["/^react/", "module", "/^~/", "/^@mui/", ["/^@layouts/", "/^@services/", "/^@components/"], ["parent", "sibling", "index"]]
       }
     ]
   }
