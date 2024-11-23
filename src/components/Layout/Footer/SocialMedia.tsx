@@ -1,15 +1,15 @@
-import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import React from 'react'
+import { FaInstagram } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
 
-type Props = React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & { children: React.ReactNode };
+type Props = React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> & { children: React.ReactNode }
 const SocialLink: React.FC<Props> = ({ children, ...props }) => {
   return (
     <a className="text-white sm:text-gray-300 sm:hover:text-white" target="_blank" {...props}>
       {children}
     </a>
-  );
-};
+  )
+}
 
 export const SocialMedia: React.FC = () => {
   return (
@@ -21,5 +21,5 @@ export const SocialMedia: React.FC = () => {
         <FaFacebook />
       </SocialLink>
     </div>
-  );
-};
+  )
+}

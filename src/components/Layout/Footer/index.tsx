@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import bgFooter from "@/assets/footer-backgroud.jpg";
-import { Content } from "@/components/Content";
-import { GridItem, SimpleGrid } from "@chakra-ui/react";
+import bgFooter from '@/assets/footer-backgroud.jpg'
+import { Content } from '@/components/Content'
+import { GridItem, SimpleGrid } from '@chakra-ui/react'
 
-import { FooterItemTitle } from "./FooterItemTitle";
-import { SocialMedia } from "./SocialMedia";
+import { FooterItemTitle } from './FooterItemTitle'
+import { SocialMedia } from './SocialMedia'
 
 export const Footer: React.FC = () => {
   return (
@@ -53,5 +53,5 @@ export const Footer: React.FC = () => {
         </SimpleGrid>
       </Content>
     </footer>
-  );
-};
+  )
+}

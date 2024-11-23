@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react'
 
-import { clsx } from "clsx";
-import { Montserrat } from "next/font/google";
+import { clsx } from 'clsx'
+import { Montserrat } from 'next/font/google'
 
-import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Footer } from './Footer'
+import { Header } from './Header'
 
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 
 type Props = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
 export const Layout: React.FC<Props> = ({ children }) => {
-  const className = clsx(montserrat.variable, "font-sans");
+  const className = clsx(montserrat.variable, 'font-sans')
   return (
     <div className={className}>
       <Header />
       <main>{children}</main>
       <Footer />
     </div>
-  );
-};
+  )
+}

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import { HeroContent } from "./HeroContent";
-import { HeroContainer, Overlay, Video, VideoWrap } from "./styles";
+import { HeroContent } from './HeroContent'
+import { HeroContainer, Overlay, Video, VideoWrap } from './styles'
 
 export const SectionHero: React.FC = () => {
   return (
@@ -15,5 +15,5 @@ export const SectionHero: React.FC = () => {
       <Overlay />
       <HeroContent />
     </HeroContainer>
-  );
-};
+  )
+}

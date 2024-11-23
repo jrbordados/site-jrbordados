@@ -1,7 +1,7 @@
-import { Layout } from "@/components/Layout";
-import { SectionBgImage } from "@/components/SectionBgImage";
-import { SectionHero } from "@/components/SectionHero";
-import { SectionService } from "@/components/SectionService";
+import { Layout } from '@/components/Layout'
+import { SectionBgImage } from '@/components/SectionBgImage'
+import { SectionHero } from '@/components/SectionHero'
+import { SectionService } from '@/components/SectionService'
 
 export default function Home() {
   return (
@@ -10,5 +10,5 @@ export default function Home() {
       <SectionService />
       <SectionBgImage />
     </Layout>
-  );
+  )
 }

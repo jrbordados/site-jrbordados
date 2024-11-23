@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import img from "@/assets/logo-92.png";
-import { Content } from "@/components/Content";
-import Image from "next/image";
+import img from '@/assets/logo-92.png'
+import { Content } from '@/components/Content'
+import Image from 'next/image'
 
-import { SiteTitle } from "./SiteTitle";
+import { SiteTitle } from './SiteTitle'
 
 export const Header: React.FC = () => {
   return (
@@ -16,5 +16,5 @@ export const Header: React.FC = () => {
         </div>
       </Content>
     </div>
-  );
-};
+  )
+}

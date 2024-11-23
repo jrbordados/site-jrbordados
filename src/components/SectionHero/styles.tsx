@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeroContainer = styled.section`
   min-height: 650px;
@@ -10,11 +10,11 @@ export const HeroContainer = styled.section`
   box-sizing: border-box;
   padding-top: 20.542rem;
   padding-bottom: 20.542rem;
-`;
+`
 
 export const VideoWrap = styled.div`
   z-index: 1;
-`;
+`
 
 export const Video = styled.video`
   box-sizing: border-box;
@@ -26,7 +26,7 @@ export const Video = styled.video`
 
   width: 100%;
   height: 100%;
-`;
+`
 
 export const Overlay = styled.div`
   background: linear-gradient(to top, #000, transparent 100%);
@@ -38,4 +38,4 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   z-index: 2;
-`;
+`

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import { Box, GridItem, SimpleGrid } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, GridItem, SimpleGrid } from '@chakra-ui/react'
+import Image from 'next/image'
 
-import { Content } from "../Content";
-import { services, type ServiceType } from "./mock";
+import { Content } from '../Content'
+import { services, type ServiceType } from './mock'
 
 const ServiceItem: React.FC<ServiceType> = ({ title, image }) => {
   return (
@@ -14,8 +14,8 @@ const ServiceItem: React.FC<ServiceType> = ({ title, image }) => {
       </Box>
       <div>{title}</div>
     </div>
-  );
-};
+  )
+}
 
 export const SectionService: React.FC = () => {
   return (
@@ -25,15 +25,15 @@ export const SectionService: React.FC = () => {
         <p></p>
 
         <SimpleGrid columns={{ lg: 2, xl: 3, md: 2, base: 1, sm: 1 }} gap={4}>
-          {services.map((service) => {
+          {services.map(service => {
             return (
               <GridItem key={service.id}>
                 <ServiceItem {...service} />
               </GridItem>
-            );
+            )
           })}
         </SimpleGrid>
       </Content>
     </section>
-  );
-};
+  )
+}
