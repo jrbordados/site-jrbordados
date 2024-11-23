@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { Rating } from '@/components/Rating'
-import { Box, Grid, GridItem } from '@chakra-ui/react'
+import { Box, SimpleGrid, GridItem } from '@chakra-ui/react'
 
 export const HeroContent: React.FC = () => {
   return (
-    <Grid
+    <SimpleGrid
       css={{
         gap: '1rem',
         justifyContent: 'space-between',
@@ -18,10 +18,10 @@ export const HeroContent: React.FC = () => {
         transform: 'translate(-50%, -50%)',
         width: '90%'
       }}
-      templateColumns="repeat(2, 1fr)"
+      columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
     >
-      <GridItem border={'1px dashed #fff'} alignSelf={'center'}>
-        <h2 className="text-white mb-lg-2 mb-2">Delicious Steaks</h2>
+      <GridItem alignSelf={'center'}>
+        <h2 className="text-white mb-lg-2 mb-2">Empresa de Bordados</h2>
         <div className="flex flex-wrap justify-items-center my-2">
           <Box color={{ base: 'white', _dark: 'red' }}>
             <Rating value={4} gap={2}>
@@ -29,9 +29,14 @@ export const HeroContent: React.FC = () => {
             </Rating>
           </Box>
         </div>
-        <p className="text-white text-lg">1,206+ Customer ReviewsFrom</p>
+        <p className="text-white text-lg">290+ avaliações no Google </p>
       </GridItem>
-      <GridItem border={'1px dashed #fff'}>Slider</GridItem>
-    </Grid>
+      <GridItem
+        alignSelf={'center'}
+        // border={'1px dashed #fff'}
+      >
+        {' '}
+      </GridItem>
+    </SimpleGrid>
   )
 }

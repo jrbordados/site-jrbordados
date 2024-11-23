@@ -21,8 +21,8 @@ export const SectionService: React.FC = () => {
   return (
     <section>
       <Content>
-        <h2 className="text-center my-4">Special Menus</h2>
-        <p></p>
+        <h2 className="text-center my-2">Serviços mais procurados</h2>
+        <p className="text-center my-8">Conheça os serviços mais procurados em Fortaleza</p>
 
         <SimpleGrid columns={{ lg: 2, xl: 3, md: 2, base: 1, sm: 1 }} gap={4}>
           {services.map(service => {

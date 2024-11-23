@@ -1,6 +1,7 @@
 import React from 'react'
 
-import bgImg from '@/assets/space-backgroud.jpg'
+// import bgImg from '@/assets/space-backgroud.jpg'
+import bgImg from '@/assets/capa.jpg'
 
 export const SectionBgImage: React.FC = () => {
   return (

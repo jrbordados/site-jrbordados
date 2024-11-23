@@ -1,18 +1,21 @@
 import React from 'react'
 
-import bgFooter from '@/assets/footer-backgroud.jpg'
+// import bgFooter from '@/assets/footer-backgroud.jpg'
+import bgFooter from '@/assets/bg-barudan.jpg'
 import { Content } from '@/components/Content'
 import { GridItem, SimpleGrid } from '@chakra-ui/react'
 
 import { FooterItemTitle } from './FooterItemTitle'
 import { SocialMedia } from './SocialMedia'
+import { StyledFooter } from './styles'
 
 export const Footer: React.FC = () => {
   return (
-    <footer
+    <StyledFooter style={{ backgroundImage: `url('${bgFooter?.src}')` }}>
+      {/* <footer
       className="min-h-[412px] bg-no-repeat bg-center bg-cover relative py-20 before:content-[' '] before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:z-10 before:bg-gradient-to-t from-black to-transparent"
       style={{ backgroundImage: `url('${bgFooter?.src}')` }}
-    >
+    > */}
       <Content style={{ zIndex: 10 }}>
         <h4 className="text-white font-bold text-2xl">JR Bordados</h4>
         <p className="text-white mb-5">Bordados computadorizados e Corte a Laser</p>
@@ -52,6 +55,7 @@ export const Footer: React.FC = () => {
           </GridItem>
         </SimpleGrid>
       </Content>
-    </footer>
+      {/* </footer> */}
+    </StyledFooter>
   )
 }
