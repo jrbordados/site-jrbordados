@@ -12,7 +12,7 @@ const ServiceItem: React.FC<ServiceType> = ({ title, image }) => {
       <Box className="xl:size-[320px] lg:size-[350px] overflow-hidden">
         <Image src={image} alt={title} />
       </Box>
-      <div>{title}</div>
+      <h3 className="text-center pt-1 pb-4">{title}</h3>
     </div>
   )
 }
