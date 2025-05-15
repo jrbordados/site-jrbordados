@@ -8,9 +8,11 @@ export const ServiceItem: React.FC<Service> = ({ title, image }) => {
   return (
     <div>
       <Box className="xl:size-[320px] lg:size-[350px] overflow-hidden">
-        <Image src={image} alt={title} />
+        <Image itemProp="image" src={image} alt={title} />
       </Box>
-      <h3 className="text-center pt-1 pb-4">{title}</h3>
+      <h3 itemProp="name" className="text-center pt-1 pb-4">
+        {title}
+      </h3>
     </div>
   )
 }
