@@ -1,9 +1,12 @@
 import React from 'react'
 
+import { BootstrapCarousel, type CarouselItem } from '@/components/BootstrapCarousel'
 import { Rating } from '@/components/Rating'
 import { Box, SimpleGrid, GridItem } from '@chakra-ui/react'
 
-export const HeroContent: React.FC = () => {
+export type HeroContentProps = { slides?: CarouselItem[] }
+
+export const HeroContent: React.FC<HeroContentProps> = ({ slides = [] }) => {
   return (
     <SimpleGrid
       css={{
@@ -35,7 +38,7 @@ export const HeroContent: React.FC = () => {
         alignSelf={'center'}
         // border={'1px dashed #fff'}
       >
-        {' '}
+        {slides?.length ? <BootstrapCarousel items={slides} interval={5000} /> : null}
       </GridItem>
     </SimpleGrid>
   )
