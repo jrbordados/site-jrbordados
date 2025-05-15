@@ -32,7 +32,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({ slides = [] }) => {
             </Rating>
           </Box>
         </div>
-        <p className="text-white text-lg">290+ avaliações no Google </p>
+        <p className="text-white text-lg">368+ avaliações no Google </p>
       </GridItem>
       <GridItem
         alignSelf={'center'}
