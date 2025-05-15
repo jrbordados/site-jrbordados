@@ -1,23 +1,15 @@
 import React from 'react'
 
-import { Box, GridItem, SimpleGrid } from '@chakra-ui/react'
-import Image from 'next/image'
+import { type Service } from '@/services/domain/services'
+import { GridItem, SimpleGrid } from '@chakra-ui/react'
 
 import { Content } from '../Content'
-import { services, type ServiceType } from './mock'
+import { ServiceItem } from './ServiceItem'
 
-const ServiceItem: React.FC<ServiceType> = ({ title, image }) => {
-  return (
-    <div>
-      <Box className="xl:size-[320px] lg:size-[350px] overflow-hidden">
-        <Image src={image} alt={title} />
-      </Box>
-      <div>{title}</div>
-    </div>
-  )
-}
+type SectionServiceProps = { services: Service[] }
 
-export const SectionService: React.FC = () => {
+export const SectionService: React.FC<SectionServiceProps> = ({ services }) => {
+  if (!services?.length) return null
   return (
     <section>
       <Content>
