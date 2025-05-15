@@ -12,7 +12,7 @@ import { type Service } from '../domain/services'
 export const mockServices: Service[] = [
   {
     id: 1,
-    title: 'Bordados no Varejo',
+    title: 'Bordados na Unidade',
     description: 'Realizamos bordados em peças únicas, com preços especiais para varejo.',
     price: 1.12,
     image: i0
@@ -26,7 +26,7 @@ export const mockServices: Service[] = [
   },
   {
     id: 2,
-    title: 'Borados em uniformes',
+    title: 'Bordados em Uniformes',
     description: 'Traga seu uniforme para bordar logotipos, nomes, símbolos. Bordamos qualquer desenho em vários estilos e cores.',
     price: 2.1,
     image: i2

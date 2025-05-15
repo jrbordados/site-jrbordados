@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
     <StyledFooter style={{ backgroundImage: `url('${bgFooter?.src}')` }}>
       <Content style={{ zIndex: 10 }}>
         <h4 className="text-white font-bold text-2xl">JR Bordados</h4>
-        <p className="text-white mb-5">Bordados computadorizados e Corte a Laser</p>
+        <p className="text-white mb-5">Bordados computadorizados - Corte e Gravações a Laser</p>
         <SimpleGrid columns={{ lg: 3, xl: 4, md: 2, base: 1, sm: 1 }} gap={4} className="text-white justify-around">
           <GridItem>
             <FooterItemTitle>Localização</FooterItemTitle>

@@ -11,7 +11,7 @@ type SectionServiceProps = { services: Service[] }
 export const SectionService: React.FC<SectionServiceProps> = ({ services }) => {
   if (!services?.length) return null
   return (
-    <section itemProp="services">
+    <section>
       <Content>
         <h2 className="text-center my-2">Serviços mais procurados</h2>
         <p className="text-center my-8">Conheça os serviços mais procurados em Fortaleza</p>

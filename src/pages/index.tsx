@@ -1,5 +1,6 @@
 import { type CarouselItem } from '@/components/BootstrapCarousel'
 import { Layout } from '@/components/Layout'
+import { ScriptSchema } from '@/components/ScriptSchema'
 import { SectionBgImage } from '@/components/SectionBgImage'
 import SectionDescription from '@/components/SectionDescription'
 import { SectionHero } from '@/components/SectionHero'
@@ -25,6 +26,7 @@ const HomePage: NextPage<HomePageProps> = ({ services }) => {
           content="Somos especialistas em bordados computadorizados no varejo e atacado. Confira nossas soluções: Richelieu, Apliques (Patch), Alto relevo (3D), Filigrana, Quilt, Florais"
         />
         <meta property="og:url" content="https://jrbordados.com.br" />
+        <ScriptSchema services={services} />
       </Head>
 
       <Layout>
