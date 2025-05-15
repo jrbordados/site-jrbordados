@@ -1,6 +1,6 @@
 {
   "name": "site-jrbordados",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,6 +9,10 @@
     "lint": "next lint",
     "lint:eslint": "eslint ./src --ext js --ext ts --ext tsx --fix",
     "snippet": "chakra snippet add"
+  },
+  "author": {
+    "name": "Jr Bordados",
+    "email": "jrbordados@hotmail.com"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.5.1",
