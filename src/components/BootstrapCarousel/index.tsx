@@ -47,7 +47,7 @@ export const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ id = 'caro
             src={item.image}
             alt={item.title}
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            loading={idx === 0 ? undefined : 'lazy'}
             sizes="(max-width: 420px) 370px,
               (max-width: 640px) 576px,
               (max-width: 768px) 338px,
@@ -56,8 +56,8 @@ export const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ id = 'caro
               640px"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white flex flex-col items-start">
-            <h5 className="text-2xl md:text-3xl font-bold mb-2">{item.title}</h5>
-            <p className="text-base md:text-lg">{item.description}</p>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">{item?.title}</h3>
+            <p className="text-base md:text-lg">{item?.description}</p>
           </div>
         </div>
       ))}

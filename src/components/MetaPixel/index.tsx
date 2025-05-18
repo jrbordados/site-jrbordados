@@ -9,7 +9,7 @@ interface MetaPixelProps {
 }
 
 // this can't be instatiated in the server
-export default function MetaPixelClient(_p?: MetaPixelProps) {
+export const MetaPixelClient: React.FC<MetaPixelProps> = _p => {
   const { events } = useRouter()
 
   React.useEffect(() => {

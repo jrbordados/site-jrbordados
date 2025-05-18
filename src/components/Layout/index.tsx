@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { usePageLoaded } from '@/hooks/usePageLoaded'
 import { clsx } from 'clsx'
 import dynamic from 'next/dynamic'
 import { Montserrat } from 'next/font/google'
@@ -7,7 +8,7 @@ import { Montserrat } from 'next/font/google'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
-export const MetaPixel = dynamic(() => import('@/components/MetaPixel'), {
+export const MetaPixel = dynamic(() => import('@/components/MetaPixel').then(ctx => ctx.MetaPixelClient), {
   ssr: false
 })
 
@@ -18,10 +19,11 @@ type Props = {
 }
 
 export const Layout: React.FC<Props> = ({ children }) => {
+  const pageLoaded = usePageLoaded()
   const className = clsx(montserrat.variable, 'font-sans')
   return (
     <div className={className}>
-      <MetaPixel />
+      {pageLoaded ? <MetaPixel /> : null}
       <Header />
       <main>{children}</main>
       <Footer />
