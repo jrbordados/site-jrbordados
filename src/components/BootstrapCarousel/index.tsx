@@ -42,7 +42,7 @@ export const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ id = 'caro
           key={item.id}
           className={`absolute inset-0 transition-opacity duration-700 ${idx === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
         >
-          <Image src={item.image} alt={item.title} className="w-full h-full object-cover object-center" />
+          <Image src={item.image} alt={item.title} className="w-full h-full object-cover object-center" loading="lazy" />
           <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white flex flex-col items-start">
             <h5 className="text-2xl md:text-3xl font-bold mb-2">{item.title}</h5>
             <p className="text-base md:text-lg">{item.description}</p>
