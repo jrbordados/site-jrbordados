@@ -10,7 +10,7 @@ import { SocialMedia } from './SocialMedia'
 import { StyledFooter } from './styles'
 
 export const Footer: React.FC = () => {
-  const { props } = getImageProps({ alt: '', width: 1920, height: 1280, src: '/bg-footer.jpg' })
+  const { props } = getImageProps({ alt: 'maquina de bordar', width: 1920, height: 1280, src: '/bg-footer.jpg' })
   const backgroundImage = getBackgroundImage(props.srcSet)
   return (
     <StyledFooter style={{ backgroundImage }}>
