@@ -1,16 +1,19 @@
 import React from 'react'
 
-import bgFooter from '@/assets/bg-barudan.jpg'
 import { Content } from '@/components/Content'
+import { getBackgroundImage } from '@/helpers/image'
 import { GridItem, SimpleGrid } from '@chakra-ui/react'
+import { getImageProps } from 'next/image'
 
 import { FooterItemTitle } from './FooterItemTitle'
 import { SocialMedia } from './SocialMedia'
 import { StyledFooter } from './styles'
 
 export const Footer: React.FC = () => {
+  const { props } = getImageProps({ alt: '', width: 1920, height: 1280, src: '/bg-footer.jpg' })
+  const backgroundImage = getBackgroundImage(props.srcSet)
   return (
-    <StyledFooter style={{ backgroundImage: `url('${bgFooter?.src}')` }}>
+    <StyledFooter style={{ backgroundImage }}>
       <Content style={{ zIndex: 10 }}>
         <h4 className="text-white font-bold text-2xl">JR Bordados</h4>
         <p className="text-white mb-5">Bordados computadorizados - Corte e Gravações a Laser</p>
