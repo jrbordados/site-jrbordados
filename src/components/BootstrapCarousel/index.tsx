@@ -48,13 +48,12 @@ export const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ id = 'caro
             alt={item.title}
             className="w-full h-full object-cover object-center"
             loading="lazy"
-            sizes="
-              (max-width: 420px) 370px,
+            sizes="(max-width: 420px) 370px,
               (max-width: 640px) 576px,
               (max-width: 768px) 338px,
               (max-width: 1024px) 452px,
               (max-width: 1024px) 568px,
-              640px  "
+              640px"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white flex flex-col items-start">
             <h5 className="text-2xl md:text-3xl font-bold mb-2">{item.title}</h5>
