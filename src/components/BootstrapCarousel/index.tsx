@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect, useRef } from 'react'
 
 import Image, { type StaticImageData } from 'next/image'
