@@ -8,7 +8,11 @@ import { Montserrat } from 'next/font/google'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
-export const MetaPixel = dynamic(() => import('@/components/MetaPixel').then(ctx => ctx.MetaPixelClient), {
+// const MetaPixel = dynamic(() => import('@/components/MetaPixel').then(ctx => ctx.MetaPixelClient), {
+//   ssr: false
+// })
+
+const FacebookPixel = dynamic(() => import('@/components/FacebookPixel').then(ctx => ctx.FacebookPixel), {
   ssr: false
 })
 
@@ -23,7 +27,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
   const className = clsx(montserrat.variable, 'font-sans')
   return (
     <div className={className}>
-      {pageLoaded ? <MetaPixel /> : null}
+      {pageLoaded ? <FacebookPixel pixelId={'1597795847547618'} /> : null}
       <Header />
       <main>{children}</main>
       <Footer />
