@@ -19,7 +19,8 @@ export const HeroContent: React.FC<HeroContentProps> = ({ slides = [], pageLoade
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '90%'
+        width: '90%',
+        minHeight: '340px' // Reservar espaço para evitar CLS
       }}
       columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
     >
@@ -34,11 +35,13 @@ export const HeroContent: React.FC<HeroContentProps> = ({ slides = [], pageLoade
         </div>
         <p className="text-white text-lg">368+ avaliações no Google </p>
       </GridItem>
-      <GridItem
-        alignSelf={'center'}
-        // border={'1px dashed #fff'}
-      >
-        {slides?.length && !!pageLoaded ? <BootstrapCarousel items={slides} interval={5000} /> : null}
+      <GridItem alignSelf={'center'}>
+        {slides?.length && !!pageLoaded ? (
+          <BootstrapCarousel items={slides} interval={5000} />
+        ) : (
+          // Placeholder para reservar espaço do carrossel
+          <Box minHeight="640px" width="100%" bg="gray.700" borderRadius="md" />
+        )}
       </GridItem>
     </SimpleGrid>
   )
