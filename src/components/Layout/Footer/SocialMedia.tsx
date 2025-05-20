@@ -19,7 +19,7 @@ export const SocialMedia: React.FC = () => {
       <SocialLink href="https://www.facebook.com/jrbordados" title="Facebook" aria-label="Ir para o facebook">
         <FaFacebook title="Facebook" />
       </SocialLink>
-      <SocialLink href="FaTiktok" title="Tiktok" aria-label="Ir para o tiktok">
+      <SocialLink href="https://www.tiktok.com/@jrbordados" title="Tiktok" aria-label="Ir para o tiktok">
         <FaTiktok title="Tiktok" />
       </SocialLink>
     </div>
