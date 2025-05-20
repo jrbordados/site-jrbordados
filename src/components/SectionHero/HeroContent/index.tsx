@@ -2,6 +2,7 @@ import React from 'react'
 
 import { BootstrapCarousel, type CarouselItem } from '@/components/BootstrapCarousel'
 import { Rating } from '@/components/Rating'
+import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { Box, SimpleGrid, GridItem } from '@chakra-ui/react'
 
 export type HeroContentProps = { slides?: CarouselItem[]; pageLoaded?: boolean }
@@ -34,6 +35,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({ slides = [], pageLoade
           </Box>
         </div>
         <p className="text-white text-lg">368+ avaliações no Google </p>
+        <WhatsAppButton phone="558599917475" />
       </GridItem>
       <GridItem alignSelf={'center'}>
         {slides?.length && !!pageLoaded ? (

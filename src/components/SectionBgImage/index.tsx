@@ -3,6 +3,8 @@ import React from 'react'
 import { getBackgroundImage } from '@/helpers/image'
 import { getImageProps } from 'next/image'
 
+import { WhatsAppButton } from '../WhatsAppButton'
+
 export const SectionBgImage: React.FC = () => {
   const { props } = getImageProps({ alt: 'maquina de bordar', width: 1680, height: 618, src: '/capa.jpg' })
   const backgroundImage = getBackgroundImage(props.srcSet)
@@ -11,7 +13,10 @@ export const SectionBgImage: React.FC = () => {
     <>
       <div className="h-24" />
       <div className="h-[300px] bg-no-repeat bg-fixed bg-top bg-cover sm:h-[500px]" style={{ backgroundImage }} />
-      <div className="h-[300px]" />
+
+      <div className="h-[300px] flex items-center justify-center">
+        <WhatsAppButton phone="558599917475" />
+      </div>
     </>
   )
 }
