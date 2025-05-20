@@ -1,8 +1,9 @@
-![JR Bordados](./.github/logo-gray-64.png)
 
 # site-jrbordados
 
-https://www.tooplate.com/live/2129_crispy_kitchen
+![JR Bordados](./.github/logo-gray-64.png)
+
+<https://www.tooplate.com/live/2129_crispy_kitchen>
 
 Este é um projeto [Next.js](https://nextjs.org) inicializado com [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
@@ -30,3 +31,11 @@ Para aprender mais sobre Next.js, dê uma olhada nos seguintes recursos:
 O jeito mais fácil de fazer o deploy do seu app Next.js é usar a [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
 Confira nossa [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) para mais detalhes.
+
+---
+
+### Task List
+
+- [] Remover fundo com video para dispositivo mobile
+- [] Remover carousel do Hero
+- [] Adicionar seção com botões grandes para redes sociais
