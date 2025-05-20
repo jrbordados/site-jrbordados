@@ -6,9 +6,12 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true
   },
+
   experimental: {
     optimizePackageImports: ['@chakra-ui/react', 'styled-components']
+    // legacyBrowsers: false
   }
+  // swcMinify: true
 }
 
 export default nextConfig
