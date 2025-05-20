@@ -42,9 +42,9 @@ export const Footer: React.FC = () => {
               <span>8h - 18h</span>
             </p>
             <p>
-              <span>Sábado</span>
+              <span>Sábado - Domingo</span>
               <br />
-              <span>8h - 12h</span>
+              <span>(fechado)</span>
             </p>
           </GridItem>
           <GridItem>
