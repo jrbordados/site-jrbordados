@@ -1,5 +1,9 @@
 import { Layout } from '@/components/Layout'
+import SectionDescription from '@/components/SectionDescription'
+import { SectionArguments } from '@/components/services/jaleco/SectionArguments'
+import { SectionCallToAction } from '@/components/services/jaleco/SectionCallToAction'
 import { SectionHero } from '@/components/services/jaleco/SectionHero'
+import { SectionHowItWorks } from '@/components/services/jaleco/SectionHowItWorks'
 import { ServiceScriptSchema } from '@/components/services/ServiceScriptSchema'
 import { getService } from '@/services/api/servicesApi'
 import type { Service } from '@/services/domain/services'
@@ -22,8 +26,12 @@ const ServicesJalecoPage: NextPage<ServicesJalecoPageProps> = ({ service }) => {
       </Head>
       <Layout>
         <SectionHero />
-        {/* <SectionDescription />
-        <SectionService services={services} />
+        <SectionHowItWorks />
+        <SectionArguments />
+        <SectionCallToAction />
+        <SectionDescription />
+        {/* <SectionContent /> */}
+        {/*<SectionService services={services} />
         <SectionBgImage /> */}
       </Layout>
     </>

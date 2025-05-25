@@ -10,32 +10,48 @@ export type HeroContentProps = { pageLoaded?: boolean }
 export const HeroContent: React.FC<HeroContentProps> = () => {
   return (
     <SimpleGrid
-      css={{
-        gap: '1rem',
-        justifyContent: 'space-between',
-        alignContent: 'center',
-        alignItems: 'stretch',
-        zIndex: 3,
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '90%',
-        minHeight: '380px' // Reservar espaço para evitar CLS
-      }}
+      gap={4}
       columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
+      alignItems="end"
+      width="100%"
+      minHeight="380px"
+      justifyContent={'space-between'}
+      px={{ base: 4, md: 8 }}
+      pb={0}
+      pt={{ base: 8, md: 16 }}
+      style={{ height: '100%' }}
     >
-      <GridItem alignSelf={'center'}>
-        <h2 className="text-white mb-2 text-3xl">Bordado em Jaleco: Personalize com Nome e Logo</h2>
+      <GridItem alignSelf="center" h="100%" display="flex" flexDirection="column" justifyContent="center" className="mb-4">
+        <h1 className="text-white mb-2 text-3xl">Bordado em Jaleco: Personalize com Nome e Logo</h1>
         <p className="text-white text-lg">Bordado computadorizado de alta precisão para seu jaleco </p>
-        <WhatsAppButton phone="558599917475" />
+        <div>
+          <WhatsAppButton phone="558599917475" />
+        </div>
       </GridItem>
-      <GridItem alignSelf={'center'}>
-        <Image
-          src={img01}
-          alt="Jaleco personalizado bordado"
-          style={{ maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.15)' }}
-        />
+      <GridItem alignSelf="end" h="100%" width={'100%'} display="flex" flexDirection="column" justifyContent="flex-end">
+        <div
+          style={{
+            maxWidth: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative',
+            minHeight: '380px',
+            minWidth: '380px'
+          }}
+        >
+          <Image
+            src={img01}
+            alt="Jaleco personalizado bordado"
+            style={{
+              maxWidth: '100%',
+              display: 'block',
+              objectFit: 'contain',
+              objectPosition: 'bottom'
+            }}
+          />
+        </div>
       </GridItem>
     </SimpleGrid>
   )

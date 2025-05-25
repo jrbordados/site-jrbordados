@@ -1,14 +1,11 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.section`
-  min-height: 570px;
   max-width: 100%;
   display: block;
-
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  padding-top: 60px;
 `
 
 export const VideoWrap = styled.div`
