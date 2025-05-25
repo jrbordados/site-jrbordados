@@ -1,4 +1,4 @@
-import { type CarouselItem } from '@/components/BootstrapCarousel'
+import type { CarouselItem } from '@/components/BootstrapCarousel'
 import { Layout } from '@/components/Layout'
 import { ScriptSchema } from '@/components/ScriptSchema'
 import { SectionBgImage } from '@/components/SectionBgImage'
@@ -6,10 +6,10 @@ import SectionDescription from '@/components/SectionDescription'
 import { SectionHero } from '@/components/SectionHero'
 import { SectionService } from '@/components/SectionService'
 import { getServices } from '@/services/api/servicesApi'
-import { type Service } from '@/services/domain/services'
-import { type GetServerSideProps, type NextPage } from 'next'
+import type { Service } from '@/services/domain/services'
+import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import { type StaticImageData } from 'next/image'
+import type { StaticImageData } from 'next/image'
 
 type HomePageProps = { services: Service[] }
 
