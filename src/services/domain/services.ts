@@ -6,4 +6,5 @@ export interface Service {
   description: string
   price: number
   image: string | StaticImageData
+  slug: string
 }
