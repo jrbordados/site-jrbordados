@@ -5,6 +5,7 @@ import { SectionBgImage } from '@/components/SectionBgImage'
 import SectionDescription from '@/components/SectionDescription'
 import { SectionHero } from '@/components/SectionHero'
 import { SectionService } from '@/components/SectionService'
+import { SectionSocialInvite } from '@/components/SectionSocialInvite'
 import { getServices } from '@/services/api/servicesApi'
 import type { Service } from '@/services/domain/services'
 import type { GetServerSideProps, NextPage } from 'next'
@@ -33,6 +34,7 @@ const HomePage: NextPage<HomePageProps> = ({ services }) => {
         <SectionHero slides={slides} />
         <SectionDescription />
         <SectionService services={services} />
+        <SectionSocialInvite />
         <SectionBgImage />
       </Layout>
     </>
