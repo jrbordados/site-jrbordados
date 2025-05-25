@@ -26,7 +26,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({ slides = [], pageLoade
       columns={{ base: 1, md: 2, lg: 2, xl: 2 }}
     >
       <GridItem alignSelf={'center'}>
-        <h2 className="text-white mb-lg-2 mb-2">Empresa de Bordados</h2>
+        <h1 className="text-white mb-lg-2 mb-2 text-3xl">Empresa de Bordados</h1>
         <div className="flex flex-wrap justify-items-center my-2">
           <Box color={{ base: 'white', _dark: 'red' }}>
             <Rating value={4} gap={2}>
